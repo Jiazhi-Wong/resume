@@ -1,0 +1,624 @@
+body {
+	background: url("../img/bg-dark.jpg") repeat-x top left;
+	background: url("../img/bg-dark.jpg") repeat-x,url("../img/bg-light.jpg") repeat-x left 239px;
+	background-color: #F1EFE8;
+}
+
+.wrapper {
+	width: 1070px;
+	margin: 0 auto;
+}
+
+h3 {
+	color: #227115;
+	margin-bottom: 20px;
+}
+
+/* @头部 */
+header {
+	margin-left: 20px;
+	overflow: hidden;
+}
+
+header ul {
+	overflow: hidden;
+	margin: 25px 0 65px;
+}
+
+header li {
+	float: left;
+	color: #fff;
+	display: inline;
+}
+
+header li a {
+	display: block;
+	margin-right: 25px;
+	padding-bottom: 4px;
+	color: #fff;
+	/* font-weight: 100; */
+	font-size: 12px;
+}
+
+header li a.contact {
+	color: #7f7159;
+}
+
+header li a:hover {
+	padding-bottom: 2px;
+	border-bottom: 1px solid #423b2b;
+}
+
+header h1 {
+	float: left;
+	width: 266px;
+}
+
+header h1 a {
+	display: block;
+	width: 266px;
+	height: 27px;
+	text-indent: -9999px;
+	background: url("../img/logo.png") no-repeat top left;
+}
+
+header h2 {
+	float: left;
+	margin-left: 15px;
+	padding-top: 15px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #7f7159;
+}
+
+header form {
+	float: right;
+	margin-right: 25px;
+	/* background: url("../img/search-bg.gif") no-repeat; */
+}
+
+header form .textInput {
+	float:left;
+	display: block;
+	padding-left: 30px;
+	padding-top: 3px;
+	height: 23px;
+	border: none;
+	background: url("../img/search-bg.gif") no-repeat;
+}
+
+header form .imageInput {
+	float:left;
+}
+
+/* @内容 */
+#content {
+	/* background-color: orange; */
+	margin-top: 35px;
+	/* height: 100px; */
+	overflow: hidden;
+}
+
+#content .primary {
+	float: left;
+	width: 710px;
+}
+
+.primary .imageScroll {
+	position: relative;
+	width:710px;
+	height: 320px;
+}
+
+.primary .imageScroll .prev {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 35px;
+	left: 10px;
+	top: 145px;
+	background: url("../img/arrow-prev.png") no-repeat 0 0;
+}
+
+.primary .imageScroll .prev:hover {
+	background-position: 0 -36px;
+}
+
+.primary .imageScroll .next {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 35px;
+	right: 10px;
+	top: 145px;
+	background: url("../img/arrow-next.png") no-repeat 0 0;
+}
+
+.primary .imageScroll .next:hover {
+	background-position: 0 -36px;
+}
+
+/* 项目 */
+.featurette {
+	float: left;
+	background: url("../img/bg-colosseo-overlay.jpg") no-repeat left 21px, url("../img/bg-colosseo.jpg") no-repeat;
+	padding-top: 21px;
+	font-size: 11px;
+	font-weight: bold;
+	width: 710px;
+	height: 170px;
+}
+
+.featurette a {
+	color: #af670a;
+}
+
+.featurette a:hover {
+	color: #227115;
+}
+
+.featurette1 {
+	float: left;
+	position: relative;
+	width: 170px;
+	padding: 6px 20px;
+	padding-left: 160px;
+}
+
+.featurette2 {
+	float: left;
+	position: relative;
+	width: 180px;
+	padding: 6px 20px;
+	padding-left: 140px;
+}
+
+.featurette1 a img, .featurette2 a img {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: -5px;
+}
+
+.featurette2 a img {
+	display: block;
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+
+.featurette p {
+	margin-bottom: 3px;
+	margin-top: 3px;
+	font-weight: normal;
+}
+
+.featurette1 p {
+	text-indent: -4px;
+}
+
+.featurette ul li {
+	float: left;
+	margin-right: 20px;
+	padding-right: 10px;
+	background: url("../img/arrow-orange.png") no-repeat right center;
+}
+
+/* video */
+.video {
+	float: left;
+	width: 310px;
+	height: 220px;
+	margin-left: 25px;
+}
+
+
+
+
+/* interactive */
+.interactive {
+	float: left;
+	width: 310px;
+	height: 220px;
+	margin-left: 38px;
+}
+
+/* popular */
+.popular {
+	float: left;
+	width: 310px;
+	height: 220px;
+	margin-top: 45px;
+	margin-left: 25px;
+}
+
+.popular li {
+	float: left;
+	width: 155px;
+	margin-bottom: 2px;
+}
+
+.popular li a {
+	color: #36332a;
+}
+
+.popular li a:hover {
+	color: #227115;
+	border-bottom: 1px solid #ccc;
+}
+
+/* voices */
+.voices {
+	float: left;
+	width: 310px;
+	height: 220px;
+	margin-top: 45px;
+	margin-left: 38px;
+}
+
+.voices ul.dialog {
+	position: relative;
+	width: 310px;
+	height: 178px;
+	margin-top: -15px;
+	background: url("../img/bg-map.gif") no-repeat left top;
+}
+
+.voices ul.dialog li.l1 {
+	position: absolute;
+	padding-top: 16px;
+	background: url(../img/mapmarker-dot.png) no-repeat 2px top;
+	}	
+
+.voices ul.dialog li.l1 a {
+	display: block;
+	padding-left: 11px;
+	font: 11px/14px Georgia, serif;
+	color: #32312a;
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+	background-color: rgba(255, 255, 255, 0.78);
+	}	
+
+.voices ul.dialog li.l1 a em {
+	display: block;
+	padding: 7px 8px 3px 2px;
+	height: 19px;
+	text-indent: -.3em;
+	}
+
+/* CSS3 text-overflow 
+See http://www.css3.info/preview/text-overflow */
+.voices ul.dialog li.l1 a em { 
+	white-space: nowrap; 
+	width: 135px; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	-o-text-overflow: ellipsis; 
+	-khtml-text-overflow: ellipsis; 
+	-moz-text-overflow: ellipsis; 
+	-webkit-text-overflow: ellipsis;
+	}	
+
+/* Display the full text on mouseover */	
+.voices ul.dialog li.l1 a em:hover {
+	white-space: normal;
+	overflow: visible;
+	cursor: pointer;
+	background: #fff none;
+	height: 72px;
+	padding-left: 11px;
+	padding-bottom: 5px;
+	margin-left: -9px;
+	}	
+	
+.voices ul.dialog li.l2 {
+	position: absolute;
+	padding-top: 16px;
+	background: url(../img/mapmarker-dot-alt.png) no-repeat 129px top;
+	}	
+
+.voices ul.dialog li.l2 a {
+	display: block;
+	padding-right: 11px;
+	font: 11px/14px Georgia, serif;
+	color: #32312a;
+	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+	background-color: rgba(255, 255, 255, 0.78);
+	}	
+
+.voices ul.dialog li.l2 a em {
+	display: block;
+	padding: 7px 0 3px 10px;
+	height: 19px;
+	text-indent: -.3em;
+	}
+
+/* CSS3 text-overflow 
+See http://www.css3.info/preview/text-overflow */
+.voices ul.dialog li.l2 a em { 
+	white-space: nowrap; 
+	width: 135px; 
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	-o-text-overflow: ellipsis; 
+	-khtml-text-overflow: ellipsis; 
+	-moz-text-overflow: ellipsis; 
+	-webkit-text-overflow: ellipsis;
+	}	
+
+/* Display the full text on mouseover */	
+.voices ul.dialog li.l2 a em:hover {
+	white-space: normal;
+	overflow: visible;
+	text-overflow: inherit;
+	-o-text-overflow: inherit;
+	cursor: hand;
+	cursor: pointer;
+	background: #fff none;
+	height: 72px;
+	padding-right: 11px;
+	padding-bottom: 5px;
+	margin-right: -11px;
+	}	
+
+.voices ul.more {
+	float: right;
+
+}
+
+.voices ul.more li {
+	float: left;
+	margin-right: 10px;
+	padding-right: 6px;
+	
+	background: url("../img/arrow-orange.png") no-repeat right center;
+}
+
+.voices ul.more li a {
+	color: #af670a;
+}
+
+.voices ul.more li a:hover {
+	color: #227115;
+	border-bottom: 1px solid #ccc;
+}
+
+/* 次要内容 */
+#content .secondary {
+	float: right;
+	width: 350px;
+}
+
+.secondary .saying {
+	/* float: left; */
+	position: relative;
+	width: 350px;
+	height: 320px;
+	background: url("../img/feature-orange.jpg") no-repeat;
+} 
+
+.secondary .saying p {
+	position: absolute;
+	width: 280px;
+	height: 160px;
+	text-indent: -9999px;
+	top: 60px;
+	left: 40px;
+	background: url("../img/quote-colossus.png") no-repeat;
+}
+
+.secondary .hotel {
+	margin-top: 21px;
+	height: 104px;
+	padding: 15px 27px 0;
+	background: url("../img/bg-noise.jpg") no-repeat;
+}
+
+.secondary .hotel h4 {
+	color: #af670a;
+}
+
+.secondary .hotel form fieldset {
+	margin: 10px 0;
+	border: none;
+}
+
+.hotel form label {
+	font-weight: bold;
+	margin-left: 3px;
+}
+
+.hotel form input {
+	width: 55px;
+	font-size: 10px;
+}
+
+.hotel form img {
+	vertical-align: -3px;
+	cursor: pointer;
+}
+
+.hotel form select {
+	width: 200px;
+}
+
+.hotel form div input {
+	width: 67px;
+	height: 22px;
+	padding-left: 13px;
+	vertical-align: -6px;
+}
+
+.photos {
+	padding: 50px 0 0 27px;
+	background: url("../img/bg-secondary.jpg") no-repeat;
+	min-height: 500px;
+}
+
+.photos h3 {
+	color: #36332a;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
+
+.photos a {
+	display: block;
+	float: left;
+	padding: 10px 5px 10px 15px;
+	width: 122px;
+	height: 122px;
+	
+}
+
+.photos img {
+	padding: 13px 15px 14px;
+	background: url("../img/thumb-frame.png") no-repeat;
+}
+
+.photos:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* footer */
+footer {
+	padding: 40px 0 60px;
+	/* height: 100px; */
+	text-align: center;
+	color: #8a867c;
+	background: url("../img/bg-footer.gif") no-repeat center top;
+}
+
+footer p {
+	margin-bottom: 8px;
+}
+
+footer .linkList {
+	margin-bottom: 20px;
+}
+
+.linkList a {
+	padding: 0 10px;
+	color: #af670a;
+}
+
+.linkList a:hover {
+	color: #227115;
+}
+
+footer a {
+	color: #af670a;
+}
+
+footer a:hover {
+	color: #227115;
+}
+
+footer .cameronmoll {
+	margin: 20px auto 0;
+	width: 124px;
+}
+
+
+/* detail */
+/* video */
+.videos {
+	width: 1070px;
+	text-align: center;
+	padding: 20px 0;
+	/* margin-bottom: 10px; */
+	/* height: 200px; */
+	background: url("../img/bg-darknoise.jpg");
+}
+
+.author {
+	float: left;
+	width: 210px;
+	margin: 40px 25px 70px;
+}
+
+.author img {
+	display: block;
+	float: left;
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	margin-right: 20px;
+	background-color: #fff;
+	box-shadow: 1px 1px 8px #333;
+}
+.author h4 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.author h5 {
+	font-weight: normal;
+}
+.author a {
+	color: #af670a;
+}
+.author a:hover {
+	color: #227115;
+	border-bottom: 1px solid #ccc;
+}
+
+
+.article {
+	float: left;
+	width: 520px;
+	margin: 40px 10px 70px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+}
+
+.article h3 {
+	color: #36332a;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 6px;
+}
+
+.article p {
+	text-indent: 12px;
+}
+
+.article a {
+	color: #af670a;
+}
+.article a:hover {
+	color: #227115;
+	border-bottom: 1px solid #ccc;
+}
+
+.sideNav {
+	float: left;
+	width: 178px;
+	margin: 40px 25px 70px;
+	padding-left: 30px;
+}
+
+.sideNav a {
+	color: #af670a;
+}
+.sideNav a:hover {
+	color: #227115;
+	border-bottom: 1px solid #ccc;
+}
+.sideNav ul a {
+	font-weight: bold;
+}
+.sideNav ul em {
+	padding-left: 4px;
+	color: #9d9786;
+	font-style: normal;
+}
+.sideNav p {
+	margin: 6px 0;
+}

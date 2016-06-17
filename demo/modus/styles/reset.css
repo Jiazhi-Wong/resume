@@ -1,0 +1,36 @@
+body,div,p,h1,h2,h3,header,footer,section,nav,span,ul,li,a,img,strong {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "OpenSans-Regular";
+	src: url('../fonts/OpenSans-Regular.ttf'), url('../fonts/opensans-regular-webfont.woff');
+}
+
+@font-face {
+	font-family: "OpenSans-ExtraBold";
+	src: url('../fonts/OpenSans-ExtraBold.ttf'), url('../fonts/opensans-extrabold-webfont.woff');
+}
+
+@font-face {
+	font-family: "OpenSans-SemiboldItalic";
+	src: url('../fonts/OpenSans-SemiboldItalic.ttf'), url('../fonts/opensans-semibolditalic-webfont.woff');
+}
+
+body {
+	font-family: "OpenSans-Regular", Arial, sans-serif;
+	color: #7f8c8c;
+}
+
+ul,ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}

@@ -1,0 +1,677 @@
+/* reset */
+/* 最后换成现有的元素 */
+html,body,div,p,header,nav,ul,li,h1,h2,h3,span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+body {
+	color: #fff;
+	font: 14px/1.5 "Microsoft Yahei", Helvetica, "微软雅黑", Arial, sans-serif;
+	background-color: rgb(110, 197, 117);
+
+	/* 背景颜色的渐变效果 */
+	-webkit-transition: background-color 600ms linear;
+	-moz-transition: background-color 600ms linear;
+	-o-transition: background-color 600ms linear;
+	-ms-transition: background-color 600ms linear;
+	transition: background-color 600ms linear;
+}
+
+/* 设置页面loading的样式 */
+#loading {
+	position: relative;
+	background-color: #CF4A30;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	opacity: 1;
+}
+
+#loading-center {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 50%;
+	top: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+	-moz-animation: loading-center 1s infinite;
+	-webkit-animation: loading-center 1s infinite;
+	animation: loading-center 1s infinite;
+}
+
+/* loading旋转效果 */
+@-webkit-keyframes loading-center {
+	100% {
+		-ms-transform: rotate(360deg);	
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loading-center {
+	100% {
+		-ms-transform: rotate(360deg);	
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+#loading-center .object {
+	float: left;
+	background: white;
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+}
+#loading-center .object:nth-child(2n+0) {
+	margin-right: 0px;
+}
+
+#object1 {
+	-moz-animation: object1 1s infinite;
+	-webkit-animation: object1 1s infinite;
+	animation: object1 1s infinite;
+}
+#object2 {
+	-moz-animation: object2 1s infinite;
+	-webkit-animation: object2 1s infinite;
+	animation: object2 1s infinite;
+}	
+#object3 {
+	-moz-animation: object3 1s infinite;
+	-webkit-animation: object3 1s infinite;
+	animation: object3 1s infinite;
+}		
+#object4{
+	-moz-animation: object4 1s infinite;
+	-webkit-animation: object4 1s infinite;
+	animation: object4 1s infinite;
+}
+
+/* loading效果动画 */
+@-webkit-keyframes object1{
+50% {
+    -moz-transform: translate(20px,20px); 
+   	-webkit-transform: translate(20px,20px);
+    transform: translate(20px,20px);
+	}
+}		
+@keyframes object1{
+50% {
+     -moz-transform: translate(20px,20px); 
+   	-webkit-transform: translate(20px,20px);
+    transform: translate(20px,20px);
+	}
+}
+
+@-webkit-keyframes object2{
+50% {
+    -moz-transform: translate(-20px,20px); 
+   	-webkit-transform: translate(-20px,20px);
+    transform: translate(-20px,20px);
+	}
+}		
+@keyframes object2{
+50% {
+    -moz-transform: translate(-20px,20px); 
+   	-webkit-transform: translate(-20px,20px);
+    transform: translate(-20px,20px);
+	}
+}
+
+@-webkit-keyframes object3{
+50% {
+    -moz-transform: translate(20px,-20px); 
+   	-webkit-transform: translate(20px,-20px);
+    transform: translate(20px,-20px);
+	}
+}		
+@keyframes object3{
+50% {
+    -moz-transform: translate(20px,-20px); 
+   	-webkit-transform: translate(20px,-20px);
+    transform: translate(20px,-20px);
+	}
+}
+
+@-webkit-keyframes object4{
+50% {
+    -moz-transform: translate(-20px,-20px); 
+   	-webkit-transform: translate(-20px,-20px);
+    transform: translate(-20px,-20px);
+	}
+}		
+@keyframes object4{
+50% {
+    -moz-transform: translate(-20px,-20px); 
+   	-webkit-transform: translate(-20px,-20px);
+    transform: translate(-20px,-20px);
+	}
+}
+
+#container {
+	opacity: 0;
+}
+
+/* 设置头部的样式 */
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	z-index: 100;
+	font-size: 12px;
+	background-color: rgba(0, 0, 0, .1);
+}
+
+header .smallHead {
+	float: left;
+	width: 52px;
+	height: 54px;
+	margin: 3px 0 3px 25px;
+	background: url('../img/smallHeadpic.png') no-repeat;
+}
+
+header .name h1 {
+	height: 0;
+	text-indent: -9999px;
+}
+
+header .name p {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+header .name p:nth-child(3) {
+	margin-left: 0;
+	padding-left: 14px;
+	background: url('../img/dot.png') no-repeat left center;
+}
+
+/* 设置导航栏样式 */
+header nav {
+	position: absolute;
+	top: 0;
+	right: 25px;
+}
+
+header nav li {
+	float: left;
+}
+
+header nav li:hover {
+	border-bottom: 2px #fff solid;
+}
+
+body#home nav li.home {
+	border-bottom: 2px #fff solid;
+}
+body#about nav li.about {
+	border-bottom: 2px #fff solid;
+}
+body#skill nav li.skill {
+	border-bottom: 2px #fff solid;
+}
+body#demo nav li.demo {
+	border-bottom: 2px #fff solid;
+}
+body#contact nav li.contact {
+	border-bottom: 2px #fff solid;
+}
+
+header nav li a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+}
+
+/* 设置fullpage */
+#fullpage {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.section {
+	padding-top: 60px;
+}
+
+/* 设置首页样式 */
+#fullpage .home > div {
+	margin: 0 auto;
+}
+
+body #fullpage .home h2 {
+	border: none;
+	text-indent: -9999px;
+	height: 0;
+}
+
+#fullpage .home .head {
+	width: 199px;
+	height: 199px;
+	margin-top: 100px;
+	border-radius: 50%;
+
+	animation: shining 1s infinite;
+}
+
+/* 首页头像闪亮 */
+@keyframes shining {
+50% {
+    box-shadow: 0 0 30px 10px #DCE274;
+	}
+}
+
+#fullpage .home .saying {
+	width: 40%;
+	height: 50px;
+	margin-top: 16px;
+	border-bottom: 1px #fff solid;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+#fullpage .home .info {
+	width: 50%;
+	margin-top: 20px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#fullpage .home .info p {
+	height: 30px;
+	line-height: 30px;
+}
+
+/* 设置关于我的样式 */
+#fullpage .section > div {
+	margin: 0 auto;
+} 
+
+#fullpage .section span {
+	font-weight: lighter;
+}
+
+#fullpage .section .about-header {
+	width: 140px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#fullpage .section h2 {
+	border-bottom: 2px #fff solid;
+}
+
+#fullpage .section span {
+	font-size: 20px	;
+	line-height: 25px;
+}
+
+#fullpage .about-list ul {
+	margin-top: 50px;
+	height: 180px;
+	text-align: center;
+}
+
+#fullpage .about-list li {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 160px;
+	height: 180px;
+	margin-right: 10px;
+	padding-top: 110px;
+	border: 3px #fff solid;
+	border-radius: 30px;
+}
+
+#fullpage .about-list li.degree {
+	background: url('../img/degree.png') no-repeat center 40px;
+}
+#fullpage .about-list li.age {
+	background: url('../img/age.png') no-repeat center 40px;
+}
+#fullpage .about-list li.location {
+	background: url('../img/location.png') no-repeat center 40px;
+}
+#fullpage .about-list li.condition {
+	background: url('../img/condition.png') no-repeat center 40px;
+}
+
+
+#fullpage .about-list .info h3 {
+	height: 25px;
+	line-height: 25px;
+}
+#fullpage .about-list .info span {
+	display: block;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+#fullpage .about .about-info {
+	position: relative;
+	width: 650px;
+	margin-top: 40px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#fullpage .about .about-info-inner {
+	position: relative;
+	padding: 30px 0;
+}
+
+#fullpage .about-info:before,#fullpage .about-info:after,#fullpage .about-info-inner:before,#fullpage .about-info-inner:after {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	content: "";
+}
+
+#fullpage .about-info:before {
+	top: 0;
+	left: -20px;
+	border-top: 2px #fff solid;
+}
+#fullpage .about-info-inner:before {
+	top: -20px;
+	left: 0;
+	border-left: 2px #fff solid;
+}
+#fullpage .about-info:after {
+	bottom: 0;
+	right: -20px;
+	border-bottom: 2px #fff solid;
+}
+#fullpage .about-info-inner:after {
+	bottom: -20px;
+	right: 0;
+	border-right: 2px #fff solid;
+}
+
+#fullpage .about .about-info p {
+	height: 25px;
+	line-height: 25px;
+}
+
+/* 设置web技能的样式 */
+#fullpage .section .skill-header {
+	width: 160px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#fullpage .skill .skill-info {
+	width: 650px;
+	margin-top: 30px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#fullpage .skill .skill-list {
+	width: 800px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#fullpage .skill .skill-outerUl > li {
+	float: left;
+	width: 200px;
+}
+
+#fullpage .skill .skill-list .skill-icon {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	cursor: pointer;
+	background-size: 100px 100px;
+	transition: transform .5s ease;
+}
+
+#fullpage li:hover .skill-icon {
+	transform: scale(1.1);
+}
+
+#fullpage li.html .skill-icon {
+	background: url('../img/html-icon.png') no-repeat;
+}
+#fullpage li.css .skill-icon {
+	background: url('../img/css-icon.png') no-repeat;
+}
+#fullpage li.js .skill-icon {
+	background: url('../img/js-icon.png') no-repeat;
+}
+#fullpage li.http .skill-icon {
+	background: url('../img/http-icon.png') no-repeat;
+}
+
+#fullpage .skill-list h3 {
+	margin: 10px 0;
+}
+
+#fullpage .skill-list .skill-arrow {
+	width: 21px;
+	height: 21px;
+	margin: 0 auto;
+	background: url('../img/arrow.png') no-repeat;
+	transition: transform .5s ease;
+}
+
+#fullpage .skill-list li:hover .skill-arrow {
+	transform: rotate(180deg);
+}
+
+#fullpage .skill-list .skill-subInfo {
+	display: none;
+	width: 200px;
+	margin-top: 20px;
+	margin-left: -50px;
+	padding: 20px 50px 20px 60px;
+	background: #fff;
+	border-radius: 20px;
+}
+
+#fullpage .skill-list li:hover .skill-subInfo {
+	display: block;
+}
+
+#fullpage .skill-subInfo ul {
+	list-style: disc;
+	text-align: left;
+	color: #4dc8e5;
+}
+
+#fullpage .skill-subInfo ul li {
+	line-height: 23px;
+	font-size: 16px;
+}
+
+/* 设置demo的样式 */
+#fullpage .demo {
+	text-align: center;
+}
+
+#fullpage .demo .demo-header {
+	width: 180px;
+	margin-top: 70px;
+}
+
+#fullpage .demo .demo-list {
+	position: relative;
+	width: 980px;
+	margin-top: 50px;
+	padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#fullpage .demo-list li {
+	float: left;
+	width: 175px;
+	height: 210px;
+	margin: 0 35px;
+	background: #6861a5;
+	border-radius: 6px;
+}
+
+#fullpage .demo-list .demo-shadow {
+	width: 175px;
+	height: 205px;
+	background: #7067bb;
+	border-radius: 6px;
+}
+
+#fullpage .demo-list .demo-icon {
+	width: 61px;
+	height: 61px;
+	margin: 0 auto;
+	padding: 40px 0 30px;
+}
+
+#fullpage .demo-list li.dom .demo-icon {
+	background: url('../img/dom-icon.png') no-repeat 50%;
+}
+#fullpage .demo-list li.janeshop .demo-icon {
+	background: url('../img/janeshop-icon.png') no-repeat 50%;
+}
+#fullpage .demo-list li.modus .demo-icon {
+	background: url('../img/modus-icon.png') no-repeat 50%;
+}
+#fullpage .demo-list li.roma .demo-icon {
+	background: url('../img/roma-icon.png') no-repeat 50%;
+}
+
+#fullpage .demo-list a.demo-button {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 140px;
+	height: 45px;
+	margin-left: 17.5px;
+	background: #dbdbdb;
+	border-radius: 5px;
+}
+
+#fullpage .demo-list a.demo-button .button-inner {
+	width: 140px;
+	height: 40px;
+	background: #f0f0f0;
+	border-radius: 5px;
+	color: #8678c3;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+#fullpage .demo-list a.demo-button:hover {
+	background: #7a6fd7;
+}
+
+#fullpage .demo-list a.demo-button:hover .button-inner {
+	color: #fff;
+	background: #8b7ff4;
+}
+
+/* 设置联系我的样式 */
+#fullpage .contact {
+	text-align: center;
+}
+
+#fullpage .contact .contact-header {
+	width: 180px;
+	margin-top: 80px;
+}
+
+#fullpage .contact .contact-info {
+	width: 460px;
+	height: 160px;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+#fullpage .contact-info > div {
+	float: left;
+	width: 230px;
+	height: 160px;
+	box-sizing: border-box;	
+}
+
+#fullpage .contact-info .contact-detail li {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+	text-align: left;
+}
+
+#fullpage .contact-info .contact-detail li.qq {
+	background: url('../img/qq-icon.png') no-repeat left 50%;
+}
+#fullpage .contact-info .contact-detail li.tel {
+	background: url('../img/tel-icon.png') no-repeat left 50%;
+}
+#fullpage .contact-info .contact-detail li.mail {
+	background: url('../img/mail-icon.png') no-repeat left 50%;
+}
+#fullpage .contact-info .contact-detail li.github {
+	background: url('../img/github-icon.png') no-repeat left 50%;
+	background-size: 24px;
+}
+
+#fullpage .contact-info .contact-wechat {
+	border-left: 2px #fff solid;
+	padding-top: 15px;
+}
+
+#fullpage .contact-wechat img {
+	display: block;
+	margin: 0 auto;
+}
+
+#fullpage .contact-wechat span {
+	display: block;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+#fullpage .contact .contact-footer {
+	margin-top: 150px;
+	font-size: 10px;
+}
+
+/* 设置导航小圆点的样式 */
+#fp-nav span {
+	background-color: rgba(255, 255, 255, .5)!important;
+}
+
+#fp-nav .active span {
+	background-color: rgba(255, 255, 255, 1)!important;
+}

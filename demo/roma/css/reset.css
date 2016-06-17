@@ -1,0 +1,32 @@
+/* 完成后通配符要修改成已有元素 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Museo Sans X";
+	src: url("../fonts/MuseoSans_500.otf");
+}
+
+body {
+	/* font-family: "Garamond Premier Pro"; */
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+	color: #36332a;
+}
+
+.header ul a, ol, h2, h3, h4 {
+	font-family: "Museo Sans X", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; 
+}
+
+ul,ol {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
