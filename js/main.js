@@ -1,3 +1,29 @@
+function isPC() {
+    var userAgent = navigator.userAgent;
+    console.log(userAgent);
+    var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+    var isPC = true;
+
+    for (var i=0, len=Agents.length; i<len; i++) {
+        if (userAgent.indexOf(Agents[i]) > 0) {
+            isPC = false;
+            break;
+        }
+    }
+
+    console.log(isPC);
+    return isPC;
+}
+
+(function loadOrNot() {
+	var ornot = isPC();
+	if (!ornot) {
+		document.documentElement.style.display = "none";
+		alert("为了您最佳的体验效果，请使用PC端浏览器，谢谢您的理解。")
+	}
+})();
+
+
 // 页面加载完成后，loading慢慢淡出，最后display设为none
 window.onload = function() {
 	var load = document.getElementById('loading');
