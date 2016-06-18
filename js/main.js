@@ -13,6 +13,7 @@ window.onload = function() {
    		load.style.opacity = loadOpacity;
    		container.style.opacity = containerOpacity;
 	
+		// loading完全淡出后，将其display设为none
    		if (load.style.opacity <= 0) {
    			load.style.display = "none";
    			clearInterval(fade);
@@ -26,7 +27,7 @@ $(function() {
 	var width = document.documentElement.clientWidth + 20;
 	var height = document.documentElement.clientHeight + 20;
 
-	body.style.backgroundImage = "url('img/loading.png')";
+	body.style.backgroundImage = "url('img/bodyBg.png')";
 	body.style.backgroundSize =  width + "px " + height + "px";
 });
 
@@ -55,11 +56,11 @@ $(function() {
 		anchors: settings.anchors,
 		navigation: true,
 		navigationTooltips: ['首页', '关于我', 'Web技能', 'Demo作品', '联系我'],
-		onLeave: function(curIndex, nextIndex) {
+		onLeave: function(curIndex, nextIndex) {     // 当离开一个section时，改变背景的颜色和body的id
 			$body.css('backgroundColor', settings.bgColors[nextIndex-1]);
 			$body.attr('id', settings.anchors[nextIndex-1]);
 		},
-		afterRender: function() {
+		afterRender: function() {    // fullpage页面结构生成猴，给body加id
 			$body.attr('id', "home");
 		}
 	});

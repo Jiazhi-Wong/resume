@@ -15,23 +15,23 @@ h3 {
 }
 
 /* @头部 */
-header {
+#header {
 	margin-left: 20px;
 	overflow: hidden;
 }
 
-header ul {
+#header ul {
 	overflow: hidden;
 	margin: 25px 0 65px;
 }
 
-header li {
+#header li {
 	float: left;
 	color: #fff;
 	display: inline;
 }
 
-header li a {
+#header li a {
 	display: block;
 	margin-right: 25px;
 	padding-bottom: 4px;
@@ -40,21 +40,21 @@ header li a {
 	font-size: 12px;
 }
 
-header li a.contact {
+#header li a.contact {
 	color: #7f7159;
 }
 
-header li a:hover {
+#header li a:hover {
 	padding-bottom: 2px;
 	border-bottom: 1px solid #423b2b;
 }
 
-header h1 {
+#header h1 {
 	float: left;
 	width: 266px;
 }
 
-header h1 a {
+#header h1 a {
 	display: block;
 	width: 266px;
 	height: 27px;
@@ -62,7 +62,7 @@ header h1 a {
 	background: url("../img/logo.png") no-repeat top left;
 }
 
-header h2 {
+#header h2 {
 	float: left;
 	margin-left: 15px;
 	padding-top: 15px;
@@ -71,13 +71,13 @@ header h2 {
 	color: #7f7159;
 }
 
-header form {
+#header form {
 	float: right;
 	margin-right: 25px;
 	/* background: url("../img/search-bg.gif") no-repeat; */
 }
 
-header form .textInput {
+#header form .textInput {
 	float:left;
 	display: block;
 	padding-left: 30px;
@@ -87,7 +87,7 @@ header form .textInput {
 	background: url("../img/search-bg.gif") no-repeat;
 }
 
-header form .imageInput {
+#header form .imageInput {
 	float:left;
 }
 
@@ -486,7 +486,7 @@ See http://www.css3.info/preview/text-overflow */
 }
 
 /* footer */
-footer {
+#footer {
 	padding: 40px 0 60px;
 	/* height: 100px; */
 	text-align: center;
@@ -494,11 +494,11 @@ footer {
 	background: url("../img/bg-footer.gif") no-repeat center top;
 }
 
-footer p {
+#footer p {
 	margin-bottom: 8px;
 }
 
-footer .linkList {
+#footer .linkList {
 	margin-bottom: 20px;
 }
 
@@ -511,15 +511,15 @@ footer .linkList {
 	color: #227115;
 }
 
-footer a {
+#footer a {
 	color: #af670a;
 }
 
-footer a:hover {
+#footer a:hover {
 	color: #227115;
 }
 
-footer .cameronmoll {
+#footer .cameronmoll {
 	margin: 20px auto 0;
 	width: 124px;
 }

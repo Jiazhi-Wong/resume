@@ -1,6 +1,5 @@
 /* reset */
-/* 最后换成现有的元素 */
-html,body,div,p,header,nav,ul,li,h1,h2,h3,span {
+html,body,div,p,ul,li,h1,h2,h3,span {
 	margin: 0;
 	padding: 0;
 }
@@ -179,7 +178,7 @@ body {
 }
 
 /* 设置头部的样式 */
-header {
+#header {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -187,9 +186,10 @@ header {
 	z-index: 100;
 	font-size: 12px;
 	background-color: rgba(0, 0, 0, .1);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#19000000, endColorstr=#19000000); /* ie hack */
 }
 
-header .smallHead {
+#header .smallHead {
 	float: left;
 	width: 52px;
 	height: 54px;
@@ -197,12 +197,12 @@ header .smallHead {
 	background: url('../img/smallHeadpic.png') no-repeat;
 }
 
-header .name h1 {
+#header .name h1 {
 	height: 0;
 	text-indent: -9999px;
 }
 
-header .name p {
+#header .name p {
 	float: left;
 	height: 20px;
 	line-height: 20px;
@@ -211,44 +211,44 @@ header .name p {
 	margin-right: 10px;
 }
 
-header .name p:nth-child(3) {
+#header .name > p + p {
 	margin-left: 0;
 	padding-left: 14px;
 	background: url('../img/dot.png') no-repeat left center;
 }
 
 /* 设置导航栏样式 */
-header nav {
+#header #nav {
 	position: absolute;
 	top: 0;
 	right: 25px;
 }
 
-header nav li {
+#header #nav li {
 	float: left;
 }
 
-header nav li:hover {
+#header #nav li:hover {
 	border-bottom: 2px #fff solid;
 }
 
-body#home nav li.home {
+body#home #nav li.home {
 	border-bottom: 2px #fff solid;
 }
-body#about nav li.about {
+body#about #nav li.about {
 	border-bottom: 2px #fff solid;
 }
-body#skill nav li.skill {
+body#skill #nav li.skill {
 	border-bottom: 2px #fff solid;
 }
-body#demo nav li.demo {
+body#demo #nav li.demo {
 	border-bottom: 2px #fff solid;
 }
-body#contact nav li.contact {
+body#contact #nav li.contact {
 	border-bottom: 2px #fff solid;
 }
 
-header nav li a {
+#header #nav li a {
 	display: block;
 	height: 60px;
 	line-height: 60px;
@@ -293,7 +293,7 @@ body #fullpage .home h2 {
 }
 
 #fullpage .home .saying {
-	width: 40%;
+	width: 350px;
 	height: 50px;
 	margin-top: 16px;
 	border-bottom: 1px #fff solid;
@@ -339,7 +339,9 @@ body #fullpage .home h2 {
 }
 
 #fullpage .about-list ul {
+	margin: 0 auto;
 	margin-top: 50px;
+	width: 700px;
 	height: 180px;
 	text-align: center;
 }
@@ -614,7 +616,7 @@ body #fullpage .home h2 {
 #fullpage .contact .contact-info {
 	width: 460px;
 	height: 160px;
-	margin-top: 50px;
+	margin-top: 70px;
 	overflow: hidden;
 }
 
@@ -662,17 +664,24 @@ body #fullpage .home h2 {
 	font-size: 14px;
 }
 
-/* bug */
+/* 设置footer的样式
 #fullpage .contact .contact-footer {
-	margin-top: 150px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
 	font-size: 10px;
-}
+} */
 
 /* 设置导航小圆点的样式 */
-#fp-nav span {
-	background-color: rgba(255, 255, 255, .5)!important;
+.fp-viewing #fp-nav span {
+	background-color: rgba(255, 255, 255, .5);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7FFFFFFF, endColorstr=#7FFFFFFF); /* ie hack */
 }
 
-#fp-nav .active span {
-	background-color: rgba(255, 255, 255, 1)!important;
+.fp-viewing #fp-nav .active span {
+	background-color: rgba(255, 255, 255, 1);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7FFFFFFF, endColorstr=#7FFFFFFF); /* ie hack */
 }
+

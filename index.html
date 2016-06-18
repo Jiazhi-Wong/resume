@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="keywords" content="web前端,个人简历,前端开发">
     <meta name="description" content="黄嘉志的web前端工程师个人简历">
     <title>黄嘉志的前端简历</title>
@@ -12,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
 </head>
 
-<body>
+<body class="fp-viewing">
+    <!-- loading的页面 -->
     <div id="loading">
         <div id="loading-center">
             <div class="object" id="object1"></div>
@@ -20,9 +20,12 @@
             <div class="object" id="object3"></div>
             <div class="object" id="object4"></div>
         </div>
+    <!-- loading的页面结束 -->
     </div>
+    <!-- 介绍页面 -->
     <div id="container">
-        <header>
+        <!-- 顶部fixed的导航条 -->
+        <div id="header">
         	<div class="smallHead"></div>
         	<div class="name">
         		<h1>
@@ -31,7 +34,7 @@
         		<p>AGA</p>
         		<p>RESUME</p>
         	</div>
-            <nav>
+            <div id="nav">
                 <ul>
                     <li class="home"><a href="#home">首页</a></li>
                     <li class="about"><a href="#about">关于我</a></li>
@@ -39,8 +42,10 @@
                     <li class="demo"><a href="#demo">Demo作品</a></li>
                     <li class="contact"><a href="#contact">联系我</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <!-- 顶部fixed的导航条结束 -->
+        <!-- fullpage的页面 -->
         <div id="fullpage">
             <div class="section home">
             	<h2>首页</h2>
@@ -231,16 +236,17 @@
             			<span>我的微信</span>
             		</div>
             	</div>
-            	<div class="contact-footer">
+            	<!-- <div class="contact-footer">
             		Copyright&nbsp;©&nbsp;2016&nbsp;All Rights Reserved 
-            	</div>
+            	</div> -->
             </div>
         </div>
+        <!-- fullpage的页面结束 -->
     </div>
-    <!-- 引入cdn库文件 -->
-    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+    <!-- 介绍页面结束 -->
+    <!-- 引入库文件 -->
+    <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-fullPage/2.7.4/vendors/jquery.easings.min.js"></script> -->
     <!-- 将所有js文件合并成一个文件 -->
     <script type="text/javascript" src="js/main.js"></script>
 </body>

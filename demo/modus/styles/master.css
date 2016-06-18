@@ -6,18 +6,18 @@
 }
 
 /* 设置头部样式 */
-header {
+#header {
 	height: 80px;
 	background: url("../images/decorate-1.png") repeat-x left bottom;
 	background-color: #76c7c0;
 
 }
 
-header .wrapper {
+#header .wrapper {
 	padding-top: 22px;
 }
 
-header .logo {
+#header .logo {
 	float: left;
 	margin-left: 10px;
 	color: #fff;
@@ -37,14 +37,14 @@ header .logo {
 	font-size: 25px;
 }
 
-header nav {
+#header .nav {
 	float: left;
 	margin-left: 200px;
 	margin-top: 5px;
 	overflow: visible;
 }
 
-nav ul li.master {
+.nav ul li.master {
 	float: left;
 	position: relative;
 	padding-bottom: 3px;
@@ -52,7 +52,7 @@ nav ul li.master {
 	z-index: 1;
 }
 
-nav ul li a {
+.nav ul li a {
 	display: block;
 	padding: 8px 16px 8px 26px;
 	color: #fff;
@@ -61,16 +61,16 @@ nav ul li a {
 	border-radius: 5px;
 }
 
-nav ul li.master:hover a.master {
+.nav ul li.master:hover a.master {
 	background: url("../images/up.png")  no-repeat 14px center ;
 	background-color: #e8645a !important; 
 }
 
-nav ul li.master:hover {
+.nav ul li.master:hover {
 	background-color: #e2534b !important;
 }
 
-nav .subnav {
+.nav .subnav {
 	display: none;
 	position: absolute;
 	top: 0px;
@@ -78,7 +78,7 @@ nav .subnav {
 	background: url('../images/triangle.png') no-repeat 12px 40px;
 }
 
-nav li.master:hover .subnav {
+.nav li.master:hover .subnav {
 	display: block;
 }
 
@@ -110,7 +110,7 @@ nav li.master:hover .subnav {
 	background-color: #76c7c0;
 }
 
-header .search a {
+#header .search a {
 	display: block;
 	float: left;
 	margin-top: 12px;
@@ -120,27 +120,27 @@ header .search a {
 	background: url("../images/search.png") no-repeat;
 }
 
-#home header nav .home {
+#home #header .nav .home {
 	background-color: #528b86;
 }
 
-#home header nav .home a.home {
+#home #header .nav .home a.home {
 	background-color: #62a29e;
 }
 
-#about header nav .about {
+#about #header .nav .about {
 	background-color: #528b86;
 }
 
-#about header nav .about a.about {
+#about #header .nav .about a.about {
 	background-color: #62a29e;
 }
 
-#services header nav .services {
+#services #header .nav .services {
 	background-color: #528b86;
 }
 
-#services header nav .services a.services {
+#services #header nav .services a.services {
 	background-color: #62a29e;
 }
 
@@ -218,7 +218,7 @@ header .search a {
 }
 
 /* 中部介绍 */
-section.services {
+div.services {
 	height: 600px;
 	background-color: #f3f3f3;
 	border-top: 1px #f3f3f3 solid;
@@ -423,6 +423,7 @@ section.services {
 	cursor: pointer;
 	z-index: 9999;
 	background-color: rgba(0, 0, 0, 0);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#00000000, endColorstr=#00000000); /* ie hack */
 }
 
 .wrapper .showpic .next-btn {
@@ -434,6 +435,7 @@ section.services {
 	cursor: pointer;
 	z-index: 9999;
 	background-color: rgba(0, 0, 0, 0);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#00000000, endColorstr=#00000000); /* ie hack */
 }
 
 
@@ -599,7 +601,7 @@ section.services {
 }
 
 /* 脚部 */
-footer {
+#footer {
 	position: relative;
 	height: 350px;
 	background: url('../images/decorate-3.png') repeat-x #76c7c0;
@@ -608,22 +610,22 @@ footer {
 	color: #fff;
 }
 
-footer .contact {
+#footer .contact {
 	float: left;
 	width: 370px;
 	margin-right: 30px;
 }
 
-footer .contact .logo {
+#footer .contact .logo {
 	margin-bottom: 30px;
 }
 
-footer .contact p {
+#footer .contact p {
 	font-size: 13px;
 	line-height: 25px;
 }
 
-footer .contact .contactus {
+#footer .contact .contactus {
 	margin-top: 30px;
 }
 
@@ -633,23 +635,23 @@ footer .contact .contactus {
 	font-size: 20px;
 }
 
-footer .moreaboout {
+#footer .moreaboout {
 	float: left;
 	width: 370px;
 	overflow: hidden;
 	margin-right: 30px;
 }
 
-footer .moreaboout div {
+#footer .moreaboout div {
 	float: left;
 	width: 170px;
 }
 
-footer .moreaboout div.company {
+#footer .moreaboout div.company {
 	margin-right: 30px;
 }
 
-footer .moreaboout h3 {
+#footer .moreaboout h3 {
 	margin-top: 5px;
 	margin-bottom: 30px;
 	font-family: "OpenSans-ExtraBold";
@@ -657,45 +659,45 @@ footer .moreaboout h3 {
 	font-size: 20px;
 }
 
-footer .moreaboout ul {
+#footer .moreaboout ul {
 	margin-left: 25px;
 }
 
-footer .moreaboout ul li {
+#footer .moreaboout ul li {
 	padding-left: 15px;
 	margin-bottom: 4px;
 	background: url('../images/left.png') no-repeat 0 60%;
 }
 
-footer .moreaboout ul li a {
+#footer .moreaboout ul li a {
 	color: #fff;
 	font-size: 13px;
 }
 
-footer .blog {
+#footer .blog {
 	float: left;
 	width: 340px;
 }
 
-footer .blog h3 {
+#footer .blog h3 {
 	margin-top: 5px;
 	margin-bottom: 30px;
 	font-family: "OpenSans-SemiboldItalic";
 	font-size: 20px;
 }
 
-footer .blog h3 strong {
+#footer .blog h3 strong {
 	font-family: "OpenSans-ExtraBold";
 	font-size: 25px;
 }
 
-footer .blog div {
+#footer .blog div {
 	height: 70px;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
 
-footer .blog div a {
+#footer .blog div a {
 	display: block;
 	float: left;
 	margin-right: 18px;
@@ -703,16 +705,16 @@ footer .blog div a {
 	height: 70px;
 }
 
-footer .blog div p {
+#footer .blog div p {
 	font-size: 13px;
 }
 
-footer .blog div p.date {
+#footer .blog div p.date {
 	margin-top: 3px;
 	color: #4f8883;
 }
 
-footer .moreinfo {
+#footer .moreinfo {
 	position: absolute;
 	bottom: 0;
 	height: 50px;
@@ -721,48 +723,48 @@ footer .moreinfo {
 	z-index: 2;
 }
 
-footer .moreinfo p.date {
+#footer .moreinfo p.date {
 	float: left;
 	margin-left: 3px;
 	font-size: 12px;
 	line-height: 50px;
 }
 
-footer .moreinfo ul {
+#footer .moreinfo ul {
 	margin-top: 13.5px;
 	float: right;
 	width: 140px;
 	height: 23px;
 }
 
-footer .moreinfo ul li {
+#footer .moreinfo ul li {
 	float: left;
 	margin-right: 10px;
 }
 
-footer .moreinfo ul li a {
+#footer .moreinfo ul li a {
 	display: block;
 	width: 23px;
 	height: 23px;
 }
 
-footer .moreinfo ul li.facebook a {
+#footer .moreinfo ul li.facebook a {
 	background: url('../images/facebook.png') no-repeat center;
 }
 
-footer .moreinfo ul li.g-plus a {
+#footer .moreinfo ul li.g-plus a {
 	background: url('../images/g-plus.png') no-repeat center;
 }
 
-footer .moreinfo ul li.twitter a {
+#footer .moreinfo ul li.twitter a {
 	background: url('../images/twitter.png') no-repeat center;
 }
 
-footer .moreinfo ul li.rss a {
+#footer .moreinfo ul li.rss a {
 	background: url('../images/rss.png') no-repeat center;
 }
 
-footer .bottom {
+#footer .bottom {
 	position: absolute;
 	bottom: 0;
 	height: 50px;
@@ -770,4 +772,3 @@ footer .bottom {
 	background-color: #6ab3ac;
 	z-index: 1;
 }
-

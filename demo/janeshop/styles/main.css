@@ -1,3 +1,4 @@
+/* reset */
 body,h1,h2,h3,h4,p,dl,dt,dd,dl,ul,ol,li,form,button,input,textarea,th,td,em {
 	margin: 0;
 	padding: 0;
@@ -17,6 +18,10 @@ ul,ol {
 
 a,a:hover {
 	text-decoration: none;
+}
+
+img {
+	border: none;
 }
 
 #header {
