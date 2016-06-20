@@ -213,8 +213,19 @@ body {
 
 #header .name > p + p {
 	margin-left: 0;
-	padding-left: 14px;
+	margin-top: 0;
+}
+
+#header .name > p + p a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 14px;
 	background: url('../img/dot.png') no-repeat left center;
+}
+
+#header .name > p + p a:hover {
+	border-bottom: 2px #fff solid;
 }
 
 /* 设置导航栏样式 */
