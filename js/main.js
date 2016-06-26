@@ -1,3 +1,9 @@
+// 动态调整移动设备的像素比
+var iScale = 1;
+iScale = iScale / window.devicePixelRatio;
+console.log(iScale);
+document.write('<meta name="viewport" content="width=device-width, initial-scale=' + iScale + ', user-scalable=no">')
+
 // 页面加载完成后，loading慢慢淡出，最后display设为none
 window.onload = function() {
 	var load = document.getElementById('loading');
