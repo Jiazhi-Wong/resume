@@ -23,7 +23,14 @@ ol,ul {
 	list-style: none;
 }
 
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
+	height: 100%;
+	width: 100%;
 	color: #fff;
 	font: 14px/1.5 "Microsoft Yahei", Helvetica, "微软雅黑", Arial, sans-serif;
 	background-color: rgb(110, 197, 117);
